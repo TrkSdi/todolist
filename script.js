@@ -16,6 +16,12 @@ function addTask() {
   saveData();
 }
 
+inputBox.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addTask();
+  }
+});
+
 listContainer.addEventListener(
   "click",
   function (e) {
